@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CredHub</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_inicio">main_screen</string>
+    <string name="mySalt">ZcDy2N5WF8</string>
+    <string name="strRandomSHA">6ce9111398f7582146774fa03269a0332810e7909f17aac6ae7e53f068d3a127</string>
+    <string name="strRandomSHA1">758efc2962fdb9f524d5781a34fbdec71b05dfff1ace4c1ba2da11e2a0bdcd7a</string>
+</resources>

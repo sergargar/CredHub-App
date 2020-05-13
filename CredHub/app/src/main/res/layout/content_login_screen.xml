@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".login_screen"
+    tools:showIn="@layout/activity_login_screen">
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Insert your credentials:"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username_input1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:background="@drawable/list_background"/>
+    <EditText
+        android:id="@+id/password_input1"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/username_input1"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:background="@drawable/list_background"/>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_input1"
+        android:layout_marginTop="40dp"
+        android:width="200dp"
+        android:background="@drawable/button_border"
+        android:text="Log In"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

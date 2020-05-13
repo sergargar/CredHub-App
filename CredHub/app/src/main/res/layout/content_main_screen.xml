@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".main_screen"
+
+    tools:showIn="@layout/activity_main_screen">
+
+    <TextView
+        android:id="@+id/tvMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="List of records locally stored: "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tvMostrar"
+        android:layout_marginTop="50dp"
+        android:width="100dp"
+        android:background="@drawable/list_background"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Record"
+        android:id="@+id/NewRecord"
+        android:layout_below="@+id/list_view"
+        android:layout_marginTop="50dp"
+        android:width="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_border"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Import Record"
+        android:id="@+id/ImportRecord"
+        android:layout_below="@+id/NewRecord"
+        android:width="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_border"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

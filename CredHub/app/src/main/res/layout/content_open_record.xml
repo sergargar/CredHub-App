@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".open_record"
+    tools:showIn="@layout/activity_open_record">
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Selected record:"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:width="100dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/username_input1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:layout_below="@+id/id"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:background="@drawable/list_background"/>
+    <EditText
+        android:id="@+id/password_input1"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/username_input1"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:background="@drawable/list_background"/>
+
+    <LinearLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/password_input1"
+        android:layout_marginTop="5dp">
+    <Button
+        android:id="@+id/Random_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_input1"
+        android:layout_marginTop="30dp"
+        android:width="200dp"
+        android:text="Randomize Password"
+        android:background="@drawable/button_border"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/Show_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_input1"
+
+        android:layout_marginTop="30dp"
+        android:width="200dp"
+        android:text="Show Password"
+        android:background="@drawable/button_border"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/r1"
+        android:layout_marginTop="5dp">
+    <Button
+        android:id="@+id/Modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Show_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="200dp"
+        android:text="Modify"
+        android:background="@drawable/button_border"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Modify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="200dp"
+        android:text="Delete"
+        android:background="@drawable/button_border"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/r2"
+        android:layout_marginTop="5dp">
+    <Button
+        android:id="@+id/Export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="200dp"
+        android:text="Export"
+        android:background="@drawable/button_border"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Export"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="200dp"
+        android:text="Cancel"
+        android:background="@drawable/button_border"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
